@@ -46,7 +46,7 @@ function randomPosition(){
 	if(document.getElementById('zombie')){
 		document.getElementById('zombie').remove()
 		if (lives < 5){ 
-			document.getElementById('life' + lives).src = "../images/empty_heart.png"
+			document.getElementById('life' + lives).src = "./images/empty_heart.png"
 			lives++
 		} else{ 
 			window.location.href = 'defeat.html'
@@ -60,7 +60,7 @@ function randomPosition(){
 	positiony = positiony < 0 ? 0 : positiony
 
 	var zombie = document.createElement('img') 
-	zombie.src = '../images/zombie.png' 
+	zombie.src = './images/zombie.png' 
 	zombie.className = randomSize() + ' ' + randomSide() 
 	zombie.style.position = 'absolute' 
 	zombie.style.left = positionx + 'px'
