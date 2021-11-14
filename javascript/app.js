@@ -31,7 +31,7 @@ screenSize()
 
 var chronometer = setInterval(function(){
 	time -= 1
-	if (time < 0){ //vitória
+	if (time < 0){ //Victoria
 		clearInterval(chronometer) 
 		clearInterval(createZombie) 
 		window.location.href = 'victory.html'
